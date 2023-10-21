@@ -1,0 +1,626 @@
+<!DOCTYPE htms>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="dns-prefetch" href="//static.cdnno.com">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/homecss.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- <link rel="stylesheet" href="/style/cssvtruyen.css"> -->
+</head>
+
+<body class="page-home ">
+    <div id="app">
+        <header class="header--read bg-blue-white">
+            <nav class="navbar navbar--read navbar-light navbar-expand">
+                <div class="container px-3"><a href="/" class="navbar-brand me-4"><img src="/icon/logo.png" alt=""
+                            height="48"></a>
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown dropdown-hover"><a href="javascript:void(0)"
+                                class="nav-link d-flex align-items-center">
+                                <span class="material-symbols-outlined fz-13 pe-1">
+                                    reorder
+                                </span>
+                                Thể loại </a>
+                            <div class="dropdown-menu dropdown-menu--category rounded-0">
+                                <div class="row g-0">
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Tất cả </a>
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Tiên Hiệp </a>
+                                </div>
+                                <div class="row g-0">
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Huyền Huyễn </a>
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Khoa Huyễn </a>
+                                </div>
+                                <div class="row g-0">
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Võng Du </a>
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Đô Thị </a>
+                                </div>
+                                <div class="row g-0">
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Đồng Nhân </a>
+<a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Dã Sử </a>
+                                </div>
+                                <div class="row g-0">
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Cạnh Kỹ </a>
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Huyền Nghi </a>
+                                </div>
+                                <div class="row g-0">
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Kiếm Hiệp </a>
+                                    <a href="/theloai.html" class="dropdown-item col-6 d-flex align-items-center">
+                                        <i class="svg-icon me-2"></i>Kỳ Ảo </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-hover"><a href="#"
+                                class="nav-link d-flex align-items-center"> Bảng xếp hạng </a>
+                            <div class="dropdown-menu rounded-0">
+                                <a href="#" class="dropdown-item">Thịnh hành</a>
+                                <a href="#" class="dropdown-item">Đọc nhiều</a>
+                                <a href="#" class="dropdown-item">Tặng thưởng</a>
+                                <a href="#" class="dropdown-item">Đề cử</a>
+                                <a href="#" class="dropdown-item">Yêu thích</a>
+                                <a href="#" class="dropdown-item">Thảo luận</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div method="post" class="header__search-form ms-auto w-25 position-relative"><input type="text"
+                            name="q" placeholder="Tìm kiếm" class="form-control border-primary">
+                        <button class="btn bg-transparent text-primary shadow-none position-absolute top-0 end-0">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span></button>
+                    </div><!---->
+                    <ul class="list-unstyled mb-0 ms-auto d-flex justify-content-center">
+                        <li class="me-4"><a href="#" target="_blank"
+                                class="d-flex align-items-center px-3 py-2">
+                                <span class="material-symbols-outlined cl-grey">
+                                    upload
+                                </span></i>
+                                Đăng truyện </a></li>
+                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#js-login"
+                                class="d-block px-3 py-2"> Đăng nhập </a>
+                        </li>
+                        <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#js-register"
+                                class="d-block px-3 py-2"> Đăng ký </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <a href="truyen/ngoi-sao-hi-vong.html" target="_blank"><span class="top-bg-op-box"
+                style="background-image: url(&quot;https://static.cdnno.com/storage/topbox/c3b996421ffc45598b866776c6047512.jpg&quot;); position: absolute; z-index: 0; left: 0px; overflow: hidden; width: 100%; height: 388px; background-repeat: no-repeat; background-position: 50% 0px; background-size: cover;"></span></a>
+        <main class="main pb-4">
+            <div class="container">
+                <div class="page-content rounded-2">
+                    <h2 class="h4 mb-0">Những câu hỏi thường gặp</h2>
+                    <div class="my-3">
+                        <div id="faqs" class="accordion">
+                            <div class="border border-light mb-1">
+                                <div id="1" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Làm sao đổi màu nền,
+                                            cỡ chữ, font chữ </button></h2>
+                                </div>
+                                <div id="collapse1" aria-labelledby="headingOne" data-parent="#faqs" class="collapse"
+                                    >
+                                    <div class="p-3"> - Dùng web trên máy tính: ấn vào nút bánh răng ở bên trái khung
+                                        đọc truyện. Video hướng dẫn:
+                                        https://static.cdnno.com/videos/howto/setting-desktop.mp4<br>- Dùng web trên
+                                        điện thoại: ấn vào giữa nội dung chương truyện rồi ấn nút bánh răng ở bên dưới.
+                                        Video hướng dẫn: https://static.cdnno.com/videos/howto/setting-mobile.mp4<br>-
+                                        Dùng app Mê Truyện Chữ - Nữ Hiệp trên điện thoại: ấn vào giữa nội dung chương
+                                        truyện rồi chọn Cài đặt. Vdeo hướng dẫn:
+                                        https://static.cdnno.com/videos/howto/setting-app.mp4<br><br>Tips: ở trên app
+                                        ngoài cài đặt màu nền, cỡ chữ, font chữ bạn còn có thể cài đặt chế độ đọc truyện
+                                        theo Lật trang hoặc Cuộn dọc, ở chế độ Lật trang bạn có thể ấn vào mép phải màn
+                                        hình để lật trang thay vì vuốt </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="2" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Hoa là gì và dùng để
+                                            làm gì? </button></h2>
+                                </div>
+                                <div id="collapse2" aria-labelledby="headingOne" data-parent="#faqs" class="collapse"
+                                    >
+                                    <div class="p-3"> Hoa là một loại phiếu đề cử, dùng để đề cử truyện bạn thích, giúp
+                                        cho nhiều người biết đến truyện đó hơn và hỗ trợ người đăng truyện. Truyện càng
+                                        được đề cử nhiều Hoa thì đang có thứ hạng tốt trên Bảng Xếp Hạng </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="3" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Làm sao để có Hoa?
+                                        </button></h2>
+                                </div>
+                                <div id="collapse3" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Hoa được cộng tự động vào tài khoản của bạn vào lúc 0h00 hàng
+                                        ngày, số lượng nhận được tùy vào Đẳng Cấp của bạn. </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="4" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Hoa tồn tại được bao
+                                            lâu? </button></h2>
+                                </div>
+                                <div id="collapse4" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Hoa phải sử dụng ngay trong ngày, nếu không sẽ tàn và không sử
+                                        dụng được nữa. </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="5" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Quy định khi tặng
+                                            Hoa </button></h2>
+                                </div>
+                                <div id="collapse5" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Để có sự công bằng nhất, mỗi người chỉ được sử dụng 1 tài khoản.
+                                        Chúng tôi sẽ tổng kết và đánh giá tất cả những đề cử Hoa cho truyện, nếu phát
+                                        hiện sử dụng nhiều tài khoản để lấy hoa đề cử, truyện sẽ bị trừ số hoa đề cử
+                                        gian lận, tất cả tài khoản sẽ bị khóa. </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="6" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Kẹo là gì và để làm
+                                            gì? </button></h2>
+                                </div>
+                                <div id="collapse6" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Kẹo là một loại vật phẩm trong website. Kẹo dùng để tặng quà cho
+                                        người đăng truyện, mở khóa chương </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="7" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Làm sao để có Kẹo?
+                                        </button></h2>
+                                </div>
+                                <div id="collapse7" aria-labelledby="headingOne" data-parent="#faqs" class="collapse"
+                                    >
+                                    <div class="p-3"> Bạn có thể có kẹo qua hai hình thức: <br><br>- Làm nhiệm vụ hàng
+                                        ngày để nhận thưởng, trong phần Cá nhân - Nhận thưởng <br>- Mua kẹo trong Cá
+                                        nhân - Mua kẹo. Có thể mua kẹo thông qua momo, zalopay, ngân hàng, paypal hoặc
+                                        đổi mã thẻ, mã thẻ có thể là mã nhận được khi tham gia event hoặc mã thẻ cào
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="8" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Kẹo thường và Kẹo
+                                            miễn phí khác nhau như nào? </button></h2>
+                                </div>
+                                <div id="collapse8" aria-labelledby="headingOne" data-parent="#faqs" class="collapse"
+                                    >
+                                    <div class="p-3"> Kẹo thường có được khi bạn đổi mã hoặc mua kẹo. Kẹo thường hạn sử
+                                        dụng lâu: 30 năm<br>Kẹo miễn phí có được khi bạn làm nhiệm vụ hoặc tặng kèm khi
+                                        bạn đổi mã lấy Kẹo thường. Kẹo miên phí thường nhanh hết hạn: từ vài ngày đến
+                                        vài tuần </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="9" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Tôi muốn biết đang
+                                            có bao nhiêu Kẹo, hạn sử dụng, đã sử dụng như nào thì phải làm sao?
+                                        </button></h2>
+                                </div>
+                                <div id="collapse9" aria-labelledby="headingOne" data-parent="#faqs" class="collapse"
+                                    >
+                                    <div class="p-3"> Bạn có thể vào mục Cá nhân - Tài sản để xem </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="10" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Tôi có thể chuyển
+                                            Kẹo cho người khác dù người đó không có đăng truyện hay không? </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse10" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Không!<br><br>Kẹo chỉ dùng tặng quà và mở khóa chương. </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="11" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapse11"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Quy định về lạm dụng
+                                            Kẹo miễn phí </button></h2>
+                                </div>
+                                <div id="collapse11" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Cũng như Hoa, chúng tôi sẽ tổng kết và đánh giá tất cả những món
+                                        quà tặng ở trong từng truyện, nếu phát hiện lạm dụng nhiều tài khoản để "cày"
+                                        Kẹo miễn phí, tất cả tài khoản sẽ bị khóa, Kẹo tặng sẽ bị trừ. </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="12" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse12" aria-expanded="true" aria-controls="collapse12"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Mấy thứ Cấp này nọ
+                                            là gì vậy? </button></h2>
+                                </div>
+                                <div id="collapse12" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Cấp là 1 cách để vinh danh các thành viên tích cực của web. Bạn
+                                        càng hoạt động tích cực cấp càng cao, lợi ích nhận được càng lớn </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="13" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse13" aria-expanded="true" aria-controls="collapse13"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Chà, nghe cũng hấp
+                                            dẫn, thế Cấp có tác dụng gì? </button></h2>
+                                </div>
+                                <div id="collapse13" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Cấp càng cao càng nổi bật giữa đám dân thường khi bình luận hay
+                                        đánh giá nè<br><br>Cấp càng cao càng nhận được nhiều Hoa hàng ngày nè, cụ
+                                        thể:<br><br>- Cấp 1: nhận được 1 Hoa hàng ngày<br>- Cấp 2: nhận được 2 Hoa hàng
+                                        ngày<br>- Cấp 3: nhận được 3 Hoa hàng ngày<br>- Cấp 4: nhận được 4 Hoa hàng
+                                        ngày<br>- Cấp 5: nhận được 5 Hoa hàng ngày </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="14" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse14" aria-expanded="true" aria-controls="collapse14"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Làm sao để lên cấp
+                                            vậy? </button></h2>
+                                </div>
+                                <div id="collapse14" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Bạn có thể lên cấp sau khi đã đủ kinh nghiệm, còn điểm kinh nghiệm
+                                        làm sao để có thì tất nhiên là làm nhiệm vụ để có rồi. Với mỗi cấp bạn cần số
+                                        điểm kinh nghiệm như sau<br><br>- Cấp 1: 10 Exp<br>- Cấp 2: 100 Exp<br>- Cấp 3:
+                                        500 Exp<br>- Cấp 4: 2.000 Exp<br>- Cấp 5: 10.000 Exp </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="15" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse15" aria-expanded="true" aria-controls="collapse15"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Đừng để bị trừ Exp
+                                        </button></h2>
+                                </div>
+                                <div id="collapse15" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Khi đánh giá và bình luận truyện bạn phải tuân thủ quy định của
+                                        website, nếu vi phạm sẽ bị dính thẻ Phạt, để tẩy thẻ Phạt bạn sẽ mất Exp, nếu
+                                        không có Exp thì tài khoản của bạn sẽ có thể bị khóa một thời gian để được tẩy
+                                        thẻ Phạt </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="16" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse16" aria-expanded="true" aria-controls="collapse16"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Người hâm mộ là gì,
+                                            sao tôi đọc truyện nhưng không được thành người hâm mộ? </button></h2>
+                                </div>
+                                <div id="collapse16" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Bạn đọc 1 truyện, bạn yêu thích truyện đó nhưng bạn không được
+                                        thành người hâm mộ của truyện? Chỉ đọc truyện chưa thể hiện hết sự yêu thích của
+                                        bạn dành cho truyện, bạn cần phải hành động, phải tặng hoa, tặng quà cho truyện
+                                        thì bạn mới trở thành người hâm mộ của truyện </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="17" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse17" aria-expanded="true" aria-controls="collapse17"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Làm sao để tăng điểm
+                                            hâm mộ? </button></h2>
+                                </div>
+                                <div id="collapse17" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> · Tiêu xài 1 Kẹo = 1 điểm hâm mộ (trả phí đọc, tặng quà)<br>· Tặng
+                                        1 Hoa = 1000 điểm hâm mộ<br><br>Bạn tặng càng nhiều càng được nhiều điểm, điểm
+                                        càng cao bạn càng có vị trí cao trong bảng xếp hạng người hâm mộ </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="18" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse18" aria-expanded="true" aria-controls="collapse18"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Tôi muốn xem điểm
+                                            hâm mộ của mình, vào đâu để xem? </button></h2>
+                                </div>
+                                <div id="collapse18" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Vào truyện bạn muốn xem, ấn vào tab Hâm hộ, nếu bạn có điểm cao,
+                                        bạn sẽ nằm ngay ở bảng xếp hạng, nếu điểm còn thấp bạn kéo xuống dưới sẽ thấy.
+                                        Nếu dùng app điểm Hâm mộ nằm dưới thông tin truyện </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="19" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse19" aria-expanded="true" aria-controls="collapse19"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Làm sao để tặng quà?
+                                            Tặng hoa? Thả cảm xúc? </button></h2>
+                                </div>
+                                <div id="collapse19" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Để Tặng Hoa hoặc Tặng Quà vào bất cứ chương truyện nào của truyện
+                                        bạn muốn tặng, bạn sẽ thấy các nút:<br>- Tặng Quà, chọn món quà phù hợp với sở
+                                        thích và túi Kẹo của mình sau đó ấn Tặng<br>- Tặng Hoa<br><br><br>Để thả cảm
+                                        xúc:<br>- Trên app Mê Truyện Chữ: kéo xuống cuối chương<br>- Trên web dùng máy
+                                        tính, nút trái tim góc dưới bên phải<br>- Trên web dùng điện thoại, ấn giữa màn
+                                        hình đọc truyện </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="20" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse20" aria-expanded="true" aria-controls="collapse20"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Check-in để làm gì?
+                                            Làm sao để check-in? </button></h2>
+                                </div>
+                                <div id="collapse20" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> - Check-in là một loại nhiệm vụ hàng ngày. Khi check-in bạn sẽ
+                                        nhận được Kẹo và Exp, nếu bạn chịu khó check-in đều đặn liên tục bạn còn nhận
+                                        được quà ngoài định mức<br>- Bạn cần có các hoạt động trên web như bình luận,
+                                        like, ... mới có thể check-in </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="21" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse21" aria-expanded="true" aria-controls="collapse21"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Số liệu "Đã đọc"
+                                            trong đánh giá truyện là gì? </button></h2>
+                                </div>
+                                <div id="collapse21" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> - Để đánh giá truyện tất nhiên bạn phải đọc truyện đó rồi mới có
+                                        thể đánh giá được. <br><br>- Số liệu "Đã đọc" thể hiện người đánh giá đã đọc bao
+                                        nhiêu chương trong truyện đó rồi, số "Đã đọc" càng lớn thì đánh giá càng có tính
+                                        chính xác cao hơn. Nếu chỉ mới đọc vài chương đã đánh giá thì tất nhiên đánh giá
+                                        đó không đáng tin cho lắm rồi. </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="22" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse22" aria-expanded="true" aria-controls="collapse22"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Tôi thấy số "Đã đọc"
+                                            trong đánh giá của tôi không chính xác? </button></h2>
+                                </div>
+                                <div id="collapse22" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Cái này có thể do nhiều nguyên nhân:<br><br>- Bạn đọc ở phiên bản
+                                        cũ (truyencv) thì không được tính ở đây<br>- Bạn đọc mà quên không đăng nhập tài
+                                        khoản<br>.... </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="23" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse23" aria-expanded="true" aria-controls="collapse23"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Thế còn đánh giá ở
+                                            cuối chương truyện là gì? </button></h2>
+                                </div>
+                                <div id="collapse23" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> - Đánh giá này chỉ hiện với các truyện dịch, convert.<br><br>- Đây
+                                        là đánh giá của bạn về chất lượng bản dịch, convert của chương đó như thế nào:
+                                        đã dễ đọc chưa, dễ hiểu chưa ...<br><br>- Đánh giá này sẽ giúp hệ thống phân
+                                        loại các Dịch Giả, Converter, loại bỏ các bạn làm kém, giữ lại các bạn làm tốt.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="24" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse24" aria-expanded="true" aria-controls="collapse24"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Tôi có làm gì đâu mà
+                                            bị thêm thẻ phạt? </button></h2>
+                                </div>
+                                <div id="collapse24" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Khi bạn có bình luận hoặc đánh giá không phù hợp hoặc vi phạm nội
+                                        quy, bị người đọc khác báo cáo (gắn cờ), biên tập viên sẽ xem báo cáo và nội
+                                        dung bình luận, đánh giá của bạn, nếu nội dung không vi phạm bạn sẽ không bị
+                                        thêm thẻ phạt nhưng nếu có vi phạm, tùy vào mức độ vi phạm bạn sẽ bị thêm số thẻ
+                                        phạt tương ứng.<br><br>Rất khó có trường hợp bạn bị thẻ phạt oan vì ít nhất phải
+                                        có 02 người xác nhận nội dung bình luận, đánh giá của bạn vi phạm thì bạn mới bị
+                                        thẻ phạt: người báo cáo bạn và biên tập viên kiểm tra báo cáo. </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="25" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse25" aria-expanded="true" aria-controls="collapse25"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Vì sao tôi bị khóa
+                                            nick? </button></h2>
+                                </div>
+                                <div id="collapse25" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Bạn có thể xem lý do bị khóa nick khi đăng nhập vào web/app. Với
+                                        lý do: vi phạm hoặc bị tố cáo quá nhiều tức là bạn đã bị trên 100 thẻ phạt và hệ
+                                        thống tự khóa nick với số ngày tương ứng </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="26" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse26" aria-expanded="true" aria-controls="collapse26"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Vì sao tôi và người
+                                            khác chửi lộn mà chỉ mình tôi bị khóa? </button></h2>
+                                </div>
+                                <div id="collapse26" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> - Thứ nhất làm sao bạn biết chỉ mình bạn bị khóa nick? Cách đơn
+                                        giản nhất để kiểm tra là bạn xem bình luận, đánh giá vi phạm của người kia đối
+                                        với bạn đã bị xóa chưa, bị xóa rồi tức là người kia cũng đã bị xử lý.<br>- Nếu
+                                        thấy bình luận, đánh giá của người kia chưa bị xử lý thì bạn vui lòng đọc lại
+                                        câu hỏi: Tôi có làm gì đâu mà bị thẻ phạt? bạn sẽ hiểu là biên tập viên chỉ kiểm
+                                        tra các bình luận, đánh giá bị báo cáo (gắn cờ) nếu bình luận, đánh giá của
+                                        người khác vi phạm nhưng không ai báo cáo thì biên tập viên cũng không biết mà
+                                        xử lý, vì thế nếu thấy vẫn còn bình luận, đánh giá vi phạm thì bạn hãy báo cáo
+                                        cho biên tập viên để được xử lý </div>
+                                </div>
+                            </div>
+                            <div class="border border-light mb-1">
+                                <div id="27" class="bg-blue-white">
+                                    <h2 class="m-0"><button type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapse27" aria-expanded="true" aria-controls="collapse27"
+                                            class="btn btn-link cl-black btn-block text-start p-2 collapsed"> Tôi còn thắc mắc
+                                            khác? </button></h2>
+                                </div>
+                                <div id="collapse27" aria-labelledby="headingOne" data-parent="#faqs" class="collapse">
+                                    <div class="p-3"> Bạn có thể vào Liên hệ quản trị viên (trên web) hoặc Liên hệ, báo
+                                        lỗi (trên app) để đặt câu hỏi </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="footer">
+            <div id="footer">
+                <hr class="my-0">
+                <footer class="footer text-center py-4">
+                    <div class="container"><a href="/" class="d-inline-block py-1 my-2"><img src="icon/logo.png"
+                                alt="logo" width="64" height="64"></a>
+                        <div class="w-75 m-auto"> vTruyen.Com là nền tảng mở dành cho các tác giả và độc giả đam mê
+                            truyện chữ, nơi thành viên có thể tự do xuất bản các tác phẩm của mình với nhiều chức năng
+                            liên tục được cải tiến sẽ mang lại trải nghiệm tốt nhất cho các tác giả sáng tác truyện lẫn
+                            người đọc truyện online. </div>
+                        <div id="app-download" class="footer-app mt-4">
+                            <div class="d-flex align-items-center justify-content-center py-1"><a href="#"
+                                    class="mr-3"><img src="//vtruyen.com/assets/images/app-store.png?260523" alt=""
+                                        height="34"></a><a href="#"><img
+                                        src="//vtruyen.com/assets/images/google-play.png?260523" alt="" height="34"></a>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled mt-4 mb-0 d-flex justify-content-center">
+                            <li><a href="#" target="_blank"
+                                    class="d-inline-block px-3 py-2">Điều khoản dịch vụ</a></li>
+                            <li><a href="#" target="_blank"
+                                    class="d-inline-block px-3 py-2">Chính sách bảo mật</a></li>
+                            <li><a href="#" target="_blank"
+                                    class="d-inline-block px-3 py-2">Về bản quyền</a></li>
+                            <li><a href="#" target="_blank"
+                                    class="d-inline-block px-3 py-2">Hướng dẫn sử dụng</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div>
+            <div id="js-login" tabindex="-1" aria-labelledby="LoginTitle" aria-hidden="true"
+                class="modal modal-auth fade" style="padding-right: 17px;">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <ul class="modal-title list-unstyled d-flex m-auto" id="LoginTitle">
+                                <li><a data-bs-toggle="modal" class="d-block h3 m-0 p-3">Đăng nhập</a></li>
+                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#js-register" class="d-block h3 m-0 p-3 text-tertiary">Đăng
+                                        ký</a></li>
+                            </ul> <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <div class="d-flex mt-4"><label for="email">Email</label> <a href="javascript:void(0)"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal" class="text-primary ms-auto">Gửi
+                                        lại email kích hoạt</a></div> <input type="email" placeholder="Nhập email"
+                                    id="email" class="form-control border-0 bg-light px-4">
+                            </div>
+                            <div class="form-group">
+                                <div class="d-flex mt-4"><label for="password" class="m-0">Mật khẩu</label> <a
+                                        href="javascript:void(0)" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        class="text-primary ms-auto">Quên
+                                        mật khẩu?</a></div> <input type="password" placeholder="Nhập mật khẩu"
+                                    id="password" class="form-control border-0 bg-light px-4">
+                            </div>
+                            <div class="form-group mt-2">
+                                <div class="custom-control custom-checkbox"><input type="checkbox" id="remember"
+                                        class="custom-control-input"> <label for="remember"
+                                        class="custom-control-label">&nbsp;Ghi nhớ mật
+                                        khẩu</label></div>
+                            </div>
+                            <div class="form-group mt-2"><button
+                                    class="btn btn-primary btn-md btn-shadow btn-block font-weight-semibold">Đăng
+                                    nhập</button></div>
+                        </div>
+                        <div class="modal-footer justify-content-center bg-light text-center">
+                            Bạn chưa có tài khoản?&nbsp;<a href="javascript:void(0)" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" class="text-primary font-weight-semibold">Đăng
+                                ký ngay</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="js-register" tabindex="-1" aria-labelledby="RegisterTitle" aria-hidden="true"
+                class="modal modal-auth fade" style="padding-right: 17px;">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <ul class="list-unstyled d-flex m-auto" id="RegisterTitle">
+                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#js-login" class="d-block h3 m-0 p-3 text-tertiary">Đăng
+                                        nhập</a></li>
+                                <li><a href="javascript:void(0)" data-bs-toggle="modal" class="d-block h3 m-0 p-3">Đăng
+                                        ký</a></li>
+                            </ul>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group mt-4"><label for="email-2">Email</label> <input type="text"
+                                    placeholder="Email" id="email-2" class="form-control border-0 bg-light px-4"></div>
+                            <div class="form-group mt-4"><label for="password-2">Mật khẩu</label>
+                                <input type="password" placeholder="Nhập mật khẩu" id="password-2"
+                                    class="form-control border-0 bg-light px-4">
+                            </div>
+                            <div class="form-group mt-4"><label for="retype-password">Nhập lại khẩu</label> <input
+                                    type="password" placeholder="Nhập lại mật khẩu" id="retype-password"
+                                    class="form-control border-0 bg-light px-4"></div>
+                            <div class="form-group mt-4"><button
+                                    class="btn btn-primary btn-md btn-shadow btn-block font-weight-semibold">Đăng
+                                    ký</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
